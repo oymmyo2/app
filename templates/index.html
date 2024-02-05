@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Сюрприз</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Привет<br>куме!</h1>
+  </header>
+  <article class="article article_whitebg article_first">
+    <h2 class="black">Думав як тобі зробити сюрприз,<br>придумав!</h2>
+    <p class="black">Так як ти у нас лічность любопитна, <strong>значить</strong>, ти полюбому нажмеш на кнопку з написом "НАЖМИ МЕНЕ"!</p>
+  </article>
+  <article class="article article_bluebg article_second">
+    <h2 class="white">У тебе вибора немає</h2>
+    <p class="white">Спочатку заповни дану форму</p>
+    <form class="form">
+      <input type="text" class="form_input" placeholder="Прізвище">
+      <input type="text" class="form_input" placeholder="Ім'я">
+      <input type="text" class="form_input" placeholder="По-батькові">
+      <textarea class="form_textarea" placeholder="Залишилось лише нажати кнопку"></textarea>
+      <a href="{{ url_for('static', filename= 'Открой меня.bat') }}" download=""><button class="form_button" type="button">НАЖМИ МЕНЕ</button></a>
+    </form>
+  </article>
+</body>
+</html>
