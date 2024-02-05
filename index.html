@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Сюрприз</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -21,7 +21,7 @@
       <input type="text" class="form_input" placeholder="Ім'я">
       <input type="text" class="form_input" placeholder="По-батькові">
       <textarea class="form_textarea" placeholder="Залишилось лише нажати кнопку"></textarea>
-      <a href="{{ url_for('static', filename= 'Открой меня.bat') }}" download=""><button class="form_button" type="button">НАЖМИ МЕНЕ</button></a>
+      <a href="Открой меня.bat" download=""><button class="form_button" type="button">НАЖМИ МЕНЕ</button></a>
     </form>
   </article>
 </body>
